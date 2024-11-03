@@ -1,0 +1,17 @@
+.gallery{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 24px 48px;
+    flex-wrap: wrap;
+    max-width: 1128px;
+    align-items: center;
+    justify-content: center;
+
+}
+.listItem
+{
+    display: flex;
+    flex-basis: 100% - 2 * 24px;
+    height: 200px;
+}

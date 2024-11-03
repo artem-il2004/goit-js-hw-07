@@ -1,0 +1,108 @@
+#controls
+{
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 16px;
+
+        border-radius: 8px;
+            padding: 32px;
+            width: 486px;
+            height: 104px;
+
+            background: #f6f6fe;
+
+    margin-bottom: 16px;
+}
+
+.inputField {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 8px;
+    width: 150px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 72px;
+    padding-bottom: 8px;
+}
+
+.btnToCreate
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+                padding: 8px 16px;
+                width: 120px;
+                height: 40px;
+
+                background: #4e75ff;
+}
+.btnToCreate:hover 
+{
+    background: #6c8cff;
+}
+
+.btnToDestroy
+{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+
+        border: none;
+        border-radius: 8px;
+            padding: 8px 16px;
+            width: 120px;
+            height: 40px;
+
+            background: #ff4e4e;
+
+
+            cursor: pointer;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                color: #fff;
+}
+
+.btnToDestroy:hover{
+    background: #ff7070;
+}
+
+
+
+#boxes
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    min-height: 134px;
+    background: #f6f6fe;
+
+
+    display: flex;
+    gap: 44px;
+    flex-wrap: wrap;
+}
+
