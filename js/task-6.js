@@ -10,11 +10,14 @@ const createBtn = document.querySelector("[data-create]");
 const container = document.querySelector("#boxes");
 const deleteBtn = document.querySelector("[data-destroy]"); 
 
+
+
 createBtn.addEventListener("click", () => { 
   const form = formNumb.value;
   if (form > 100) { 
     return;
   }
+const items = [];
 container.innerHTML = '';
 let boxWidth = 30;
   let boxHeight = 30;
@@ -25,14 +28,14 @@ let boxWidth = 30;
     createDiv.style.backgroundColor = getRandomHexColor();
     createDiv.style.width = boxWidth + 'px';
     createDiv.style.height = boxHeight + 'px';
-    container.append(createDiv);
+    items.push(createDiv);
     boxHeight += 10;
     boxWidth += 10;
 
   }
   formNumb.value = '';
+  container.append(...items);
 })
-
 
 deleteBtn.addEventListener("click", () => { 
   

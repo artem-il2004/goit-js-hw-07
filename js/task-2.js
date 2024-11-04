@@ -27,17 +27,23 @@ const images = [
 
 const imgList = document.querySelector(".gallery");
 
+const items = [];
 
 
 
 images.forEach(image => { 
   const imgItem = document.createElement("li");
-const img = document.createElement("img");
-  imgList.append(imgItem);
-  imgItem.append(img);
-  imgItem.classList.add("listItem")
+  imgItem.classList.add("listItem");
+
+  const img = document.createElement("img");
+ 
+  
   img.src = image.url;
   img.alt = image.alt;
   img.width = 300;
-  img.classList.add("imgAdded")
+  img.classList.add("imgAdded");
+  imgItem.append(img);
+  items.push(imgItem);
 })
+
+imgList.append(...items);
